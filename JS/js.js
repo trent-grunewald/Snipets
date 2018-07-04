@@ -216,3 +216,21 @@
 //     console.log(com);
 //   });
 // }
+
+// -------------------------------DOM MANIPULATORS----------------------------------
+//
+// document.getElementById()
+// document.getElementsByClassName()
+// document.getElementByTagName()
+// document.querySelector() - only gives first result
+// document.querySelectorAll()
+
+// -------------------------------------------------------------------------------------
+
+var tag = docuemnt.getElementById("highlight");
+
+tag.style.color = "blue";
+tag.style.border = "10px solid red";
+tag.style.fontSize = "70px";
+tag.style.background = "yellow";
+tag.style.marginTop = "200px";
