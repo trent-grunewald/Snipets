@@ -1,0 +1,5 @@
+.selector{
+border-bottom: 2px solid transparent;
+border-image: linear-gradient(to right, #f2f1ef00, #9c98979e);
+border-image-slice: 1;
+}
