@@ -1,0 +1,11 @@
+Add this to input to only allow numerical input.
+<input type="text" onkeypress="return event.charCode === 0 || /\d/.test(String.fromCharCode(event.charCode));" />
+
+<!-- replace the /\d/ with this to allow negativ inputs -->
+|| /[\d-]/.test(
+<input type="text" onkeypress="return event.charCode === 0 || /[\d-]/.test(String.fromCharCode(event.charCode));" />
+
+
+<!-- replace the /\d/ with this to allow decimals -->
+|| /[\d.]/.test(
+<input type="text" onkeypress="return event.charCode === 0 || /[\d.]/.test(String.fromCharCode(event.charCode));" />
