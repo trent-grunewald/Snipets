@@ -1,32 +1,70 @@
-Slow expand underline
+/*---------------------------NAV UNDERLINE ------------------------------------*/
+						.navli{
+						position: relative;
+						color: #000;
+						text-decoration: none;
+					}
 
-li a{
-position: relative;
-color: #000;
-text-decoration: none;
-}
+					  .navli:hover{
+						color: #000;
+					}
 
-li a:hover{
-color: #000;
-}
+					@media screen and (max-width: 480px) {
 
-li a:before{
-content: "";
-position: absolute;
-width: 100%;
-height: 2px;
-bottom: 1.5em;
-left: 0;
-background-color: #484848;
-visibility: hidden;
--webkit-transform: scaleX(0);
-transform: scaleX(0);
--webkit-transition: all 0.3s ease-in-out 0s;
-transition: all 0.3s ease-in-out 0s;
-}
+						.navli:hover {
+							color: rgb(211, 34, 34);
+						}
+	
+					}
 
-li a:hover:before {
-visibility: visible;
--webkit-transform: scaleX(1);
-transform: scaleX(1);
-}
+					  .navli:before{
+						content: "";
+						position: absolute;
+						width: 100%;
+						height: 2px;
+						bottom: 1.5em;
+						left: 0;
+						background-color: #484848;
+						visibility: hidden;
+						-webkit-transform: scaleX(0);
+						transform: scaleX(0);
+						-webkit-transition: all 0.3s ease-in-out 0s;
+						transition: all 0.3s ease-in-out 0s;
+					}
+
+					  .navli:hover:before {
+					  visibility: visible;
+					  -webkit-transform: scaleX(1);
+					  transform: scaleX(1);
+					}
+
+/* //---------------MOBILE CSS BELOW------------------------------------------------------ */
+
+					.navli-mini{
+						position: relative;
+						color: #582a1a;
+						-webkit-box-flex: 1;
+						-ms-flex: 1 1 auto;
+						flex: 1 1 auto;
+					}
+					
+					.navli-mini:before{
+						content: "";
+						position: absolute;
+						width: 8rem;
+						height: 2px;
+						bottom: .60em;
+						right: 1px;
+						background-color: #cf252d;
+						visibility: hidden;
+						-webkit-transform: scaleX(0);
+						transform: scaleX(0);
+						-webkit-transition: all 0.3s ease-in-out 0s;
+						transition: all 0.3s ease-in-out 0s;
+					}
+					
+					.navli-mini:hover:before {
+						visibility: visible;
+						-webkit-transform: scaleX(1);
+						transform: scaleX(1);
+					}
