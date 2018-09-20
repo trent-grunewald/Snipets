@@ -18,3 +18,6 @@ For usage, there are slight changes to the way the class names are being used. P
 Example
 
 <i class="fas fa-chevron-left"></i>
+
+
+PLACE THE "IMPORT" Files in the JS FILE YOU NEED THEM IN.
