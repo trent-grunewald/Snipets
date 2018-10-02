@@ -1,0 +1,36 @@
+.col-md-4 {
+  cursor: pointer;
+  height: 150px;
+  perspective: 600;
+  position: relative;
+  width: 150px;
+}
+.card {
+  margin-top: 5em;
+  background: white;
+  padding: 20px;
+  outline: 2px solid black;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1.25s ease-in-out;
+  width: 375px;
+  height: 450px;
+}
+.flipped {
+  transform: rotateY(180deg);
+}
+.card .side {
+  backface-visibility: hidden;
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+.card .back {
+  padding: 20px;
+  background: #ffffff;
+  position: absolute;
+  transform: rotateY(180deg);
+  top: 0;
+  right: .5px;
+  height: 450px;
+}
