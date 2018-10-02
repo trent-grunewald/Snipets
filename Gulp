@@ -1,0 +1,23 @@
+
+npm install --save-dev @fortawesome/fontawesome
+npm install --save-dev @fortawesome/fontawesome-free-regular
+npm install --save-dev @fortawesome/fontawesome-free-solid
+npm install --save-dev @fortawesome/fontawesome-free-brands
+In your app.js or equivalent Javascript file,
+
+import fontawesome from '@fortawesome/fontawesome'
+import regular from '@fortawesome/fontawesome-free-regular'
+import solid from '@fortawesome/fontawesome-free-solid'
+import brands from '@fortawesome/fontawesome-free-brands'
+
+fontawesome.library.add(regular)
+fontawesome.library.add(solid)
+fontawesome.library.add(brands)
+For usage, there are slight changes to the way the class names are being used. Please refer to the icons on Fontawesome site for the "full" class names.
+
+Example
+
+<i class="fas fa-chevron-left"></i>
+
+
+PLACE THE "IMPORT" Files in the JS FILE YOU NEED THEM IN.
