@@ -1,0 +1,26 @@
+<ul class="nav">
+            <li class="nav nav-item">
+            <a href="#about">About
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>  
+            </li>
+            <li class="nav nav-item">
+                <a href="#about">Projects
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>  
+            </li>
+            <li class="nav nav-item">
+                <a href="#about">Contact
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>  
+            </li>
+          </ul>
