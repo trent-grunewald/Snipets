@@ -6,8 +6,6 @@
     let targetPosition = userTarget.getBoundingClientRect().top;
     //takes into account the users starting page position.
     let startPosition = window.pageYOffset;
-    //subtracts the target from start position to calculate how far to scroll.
-    let distance = targetPosition - startPosition;
     //will keep track of the time for requestAnimationFrame
     let startTime = null;
 
@@ -15,7 +13,7 @@
       if(startTime === null)startTime = currentTime;
       let timeElapsed = currentTime - startTime;
       //runs the animation 
-      const run = ease(timeElapsed, startPosition, distance, duration);
+      const run =  ease(timeElapsed, startPosition, targetPosition, duration);
       //scrolls to the Y position for the Run function (first (0) is X)
       window.scrollTo(0, run);
       if(timeElapsed < duration) requestAnimationFrame(animation);
