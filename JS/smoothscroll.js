@@ -43,3 +43,8 @@
   contact.addEventListener('click', function(){
     smoothScroll('#contact', 1000);
   })
+
+///////SUBTRACT THE NAVBAR HEIGHT FROM the end of RUN to adjust for the navbar
+
+// EX(Where the navebar is 72px in height:
+// const run =  ease(timeElapsed, startPosition, targetPosition, duration) -72;
